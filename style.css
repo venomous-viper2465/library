@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    --global-padding-left: 15%;
+    --global-padding-right: 15%;
+}
+
+.body{
+    min-height: 100vh;
+    background-color: #f1f5f9;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #d5bdaf;
+}
+
+.body .menu{
+    background-color: #fff;
+    height: 10vh;
+    padding-left: var(--global-padding-left);
+    padding-right: var(--global-padding-right);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 3px 3px rgba(148,163,184, 0.1);
+}
+
+.menu p{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.menu button{
+    padding:  12px 32px;
+    background-color: #e2e8f0;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+}
+
+.content .add-book{
+    margin: 0 auto;
+    display: block;
+    background-color: rgba(148,163,184, 0);
+    border: none;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 48px 32px;
+}
+
+.card-container{
+    padding-left: var(--global-padding-left);
+    padding-right: var(--global-padding-right);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 320px;
+    grid-auto-rows: 300px;
+    gap: 24px;
+}
+
+
+
+dialog{
+    padding: 36px;
+    border: none;
+    border-radius: 20px;
+    margin: 180px auto;
+}
+
+dialog::backdrop{
+    background-color: rgba(148,163,184, 0.5);
+}
+
+dialog p{
+    font-size: 23px;
+    font-weight: 800;
+    width: 15vw;
+}
+
+dialog .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+dialog .title > button{
+    background-color: #f1f5f9;
+    padding: 8px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+div > input{
+    background-color: #fffcf2;
+    border: 2px solid #ccc5b9;
+    display: block;
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+div > label{
+    font-size: 16px;
+   
+}
+
+input[type="checkbox"]{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.read{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+form > input{
+    width:100%;
+    background-color: #ff6700;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 12px ;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.card-style{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    font-size: 21px;
+    font-weight: 600;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-style > button{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+}
+
+.card-style > .checked{
+    background-color: #dda15e;
+    color: #fff;
+}
+
+.card-style > .unchecked{
+    background-color: #606c38;
+    color: #fff;
+}
+
+.card-style > .remove{
+    background-color: #e3d5ca;  
+}
